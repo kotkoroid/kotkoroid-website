@@ -4,15 +4,14 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
+	  "prepare": "svelte-kit sync || echo ''",
 		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"preview": "vite build && wrangler dev",
+		"types": "wrangler types"
+		"typecheck": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^6.0.1",
+	    "@sveltejs/adapter-cloudflare": "^7.0.5",
 		"@sveltejs/kit": "^2.22.5",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
 		"@tailwindcss/vite": "^4.1.11",
@@ -20,6 +19,7 @@
 		"svelte-check": "^4.2.2",
 		"tailwindcss": "^4.1.11",
 		"typescript": "^5.8.3",
-		"vite": "^7.0.4"
+		"vite": "^7.0.4",
+		"wrangler": "^4.24.3"
 	}
 }
