@@ -7,8 +7,8 @@
 	  "prepare": "svelte-kit sync || echo ''",
 		"dev": "vite dev",
 		"preview": "vite build && wrangler dev",
-		"types": "wrangler types"
-		"typecheck": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"types": "wrangler types",
+		"typecheck": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
 	},
 	"devDependencies": {
 	    "@sveltejs/adapter-cloudflare": "^7.0.5",
