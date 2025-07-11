@@ -8,6 +8,12 @@
 		"enabled": true,
 		"head_sampling_rate": 1
 	},
+	"routes": [
+    {
+      "pattern": "kotkoroid.com",
+      "custom_domain": true
+    }
+  ],
 	"assets": {
 		"binding": "ASSETS",
 		"directory": "./.svelte-kit/cloudflare"
