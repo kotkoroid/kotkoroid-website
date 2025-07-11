@@ -1,0 +1,24 @@
+# Operating System
+.DS_Store
+Thumbs.dll
+
+# Environment
+.env
+
+# Dependencies
+node_modules
+
+# SST
+.sst
+
+# Vite
+dist
+
+# Runtime
+.wrangler
+
+# SvelteKit
+.svelte-kit
+
+# Vitest
+coverage
